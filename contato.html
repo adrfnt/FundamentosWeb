@@ -5,44 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="Assets/css/style.css">
 </head>
 <body>
-    <ul>
-        <li>
-            <a href="index.html">Home</a>
+    <ul id="menu">
+        <li
+            ><a href="index.html">Home</a>
+        </li>
+        <li> 
+            <a href="https://www.cartoonnetwork.com.br/show/hora-de-aventura" target="_blank">Fonte</a>
         </li>
         <li>
             <a href="contato.html">Contato</a>
         </li>
     </ul>
 
-    <h1>Entre em contato comigo</h1>
+    <h1 class="center">Entre em contato comigo</h1>
 
-    <form>
-        <label for="nome">Nome:</label> <br>
-        <input type="text" id="nome">
-        <br>
-        <br>
-        <label for="email">E-mail:</label> <br>
-        <input type="email" id="email">
-        <br>
-        <br>
-        <label for="assunto">Assunto:</label> <br>
-        <textarea name="assunto" id="assunto" cols="30" rows="5"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
-    </form>
+    <div class="container mb-50">
 
-    <h2>Endereço:</h2>
-    <p>Rua Olimpíadas, 205</p>
-    <p>Vila Olímpia, São Paulo - SP</p>
+        <div>
+            <h2 class="center">Mande uma mensagem:</h2>
+            <form>
+                <label for="nome">Nome:</label> <br>
+                <input type="text" id="nome">
+                <br>
+                <br>
+                <label for="email">E-mail:</label> <br>
+                <input type="email" id="email">
+                <br>
+                <br>
+                <label for="assunto">Assunto:</label> <br>
+                <textarea name="assunto" id="assunto" cols="30" rows="5"></textarea>
+                <br>
+                <br>
+                <button>Enviar</button>
+            </form>
+        </div>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14624.952950153713!2d-46.6846744!3d-23.5957874!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4aa4c4066f6f49a2!2sTurner%20%26%20Townsend%20Brazil!5e0!3m2!1spt-BR!2sbr!4v1623864114659!5m2!1spt-BR!2sbr" 
-    width="400" 
-    height="150" 
-    style="border:0;" 
-    allowfullscreen="" loading="lazy"></iframe>
+        <div class="ml-50">
+            <h2 class="center">Endereço:</h2>
+            <p class="center">Rua Olimpíadas, 205</p>
+            <p class="center">Vila Olímpia, São Paulo - SP</p>
 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14624.952950153713!2d-46.6846744!3d-23.5957874!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4aa4c4066f6f49a2!2sTurner%20%26%20Townsend%20Brazil!5e0!3m2!1spt-BR!2sbr!4v1623864114659!5m2!1spt-BR!2sbr" 
+            width="400" 
+            height="150" 
+            style="border:0;" 
+            allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+
+    </div>
+
+    <hr>
+    <footer>
+        <div class="container">
+            <img class="tm-social" src="Assets/img/capricornio.png" alt="signo capricornio">
+
+            <a href="https://www.instagram.com/cartoonnetworkbrasil/?hl=pt-br" target="_blank">
+                <img class="tm-social" src="Assets/img/instagram.png" alt="instagram">
+            </a>
+            <img class="tm-social" src="Assets/img/heart.png" alt="heart">
+        </div>
+        <p class="center">
+            Todos os direitos reservados para: Marceline &copy;
+        </p>
+    </footer>
+  
 </body>
 </html>
