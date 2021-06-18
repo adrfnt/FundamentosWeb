@@ -1,10 +1,24 @@
 /*Estilos da página index.html*/
+body,html{
+    height: 100%;
+    margin: 0;
+}
+
+.bg{
+    background-image: url("../img/fundorosa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 .center{
     text-align: center;
 }
 
 .justify{
     text-align: justify;
+    font-style: italic;
+    color: teal;
 }
 .container{
     display: flex;
@@ -17,6 +31,7 @@
 #menu li{
     display: inline;
     padding: 15px;
+    font-style: oblique;
 }
 #menu li a{
     text-decoration: none;
@@ -43,10 +58,28 @@
 }
 
 /*Estilos da página contato.html*/
-.center{
-    text-align: center;
+body,html{
+    height: 100%;
+    margin: 0;
 }
 
+.bg2{
+    background-image: url("../img/fundoroxo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.center{
+    text-align: center;
+    font-style: italic;
+    color: #2F0838;
+}
+
+.fonte{
+    font-style: italic;
+    color: crimson;
+}
 .ml-50{
     margin-left: 50px;
 }
