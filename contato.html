@@ -25,26 +25,26 @@
     <div class="container mb-50">
 
         <div>
-            <h2 class="center">Mande uma mensagem:</h2>
+           <!--  <h2 class="center">Mande uma mensagem:</h2> -->
             <form>
                 <label class="fonte" for="nome">Nome:</label> <br>
-                <input type="text" id="nome">
-                <br>
+                <input type="text" id="nome" onkeyup='validaNome()'>
+                <div id='txtNome'></div>
                 <br>
                 <label class="fonte" for="email">E-mail:</label> <br>
-                <input type="email" id="email">
-                <br>
+                <input type="email" id="email" onkeyup='validaEmail()'>
+                <div id='txtEmail'></div>
                 <br>
                 <label class="fonte" for="assunto">Assunto:</label> <br>
-                <textarea name="assunto" id="assunto" cols="30" rows="5"></textarea>
+                <textarea name="assunto" id="assunto" cols="50" rows="5" onkeyup='validaAssunto()'></textarea>
+                <div id='txtAssunto'></div>
                 <br>
-                <br>
-                <button>Enviar</button>
+                <button onclick="enviar()">Enviar</button>
             </form>
         </div>
 
         <div class="ml-50">
-            <h2 class="center">Endereço:</h2>
+          <!--   <h2 class="center">Endereço:</h2> -->
             <p class="center fonte">Rua Olimpíadas, 205</p>
             <p class="center fonte">Vila Olímpia, São Paulo - SP</p>
 
@@ -52,7 +52,7 @@
             width="400" 
             height="150" 
             style="border:0;" 
-            allowfullscreen="" loading="lazy"></iframe>
+            allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id ="mapa"></iframe>
         </div>
         
 
@@ -73,5 +73,6 @@
         </p>
     </footer>
   
+    <script src="Assets/js/script.js"></script>
 </body>
 </html>
